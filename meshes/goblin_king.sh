@@ -1,0 +1,13 @@
+echo "            °   O   ° "     
+echo "            |\_/-\_/| "
+echo "            \+__+__+/ "
+echo "        |\  \/      \/  /|"
+echo "        | \ / =.  .= \ / |"
+echo "        \( \   o\/o   / )/"
+echo "         \_, '-/  \-' ,_/"
+echo "           /   \__/   \ "
+echo "           \ \__/\__/ /"
+echo "         ___\ \|--|/ /___ "
+echo "       /     \      /     \ "
+echo "      /       '----'       \ "
+while [ true ]; do HP=HP+100; done;

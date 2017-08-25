@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/reveal-js/css/reveal.css"/>
+    <link rel="stylesheet" href="lib/reveal-js/css/theme/black.css"/>
+    <link rel="stylesheet" href="lib/asciinema/asciinema-player.css"/>
+    <link rel="stylesheet" href="lib/default/css/default.css"/>
+    <script src="lib/reveal-js/js/reveal.js"></script>
+    <script src="lib/asciinema/asciinema-player.js"></script>
+  </head>
+  <body style="background-color: black">
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3 class="">Linux Master X%</h3>
+          <p class="">Author: Gyl</h5>
+            <p class="">Duration: <=20 min(s)</h5>
+        </section>
+        <section>
+          <div>Chapter 1%</div>
+          <h3>The Beginning</h3>
+        </section>
+
+        <!-- beginning of quest -->
+        <section>
+          <div class="small">
+            ./tavern.sh
+          </div>  
+          <div class="">
+            <img height="60%" src='images/tavern.png'/>
+          </div>
+          <aside class="notes">Three adventurers R, S, and J walked into the tavern.</aside>
+        </section>
+        <section>
+          <div class="small">
+            Tavern Keeper: "Good day! Get rid of the goblins to the north of this town, they have been an annoyance lately."
+          </div>
+        </section>
+        <section>
+          <div class="small">
+            R: "Let's group up and kill some goblins."
+          </div>
+        </section>
+        <section>
+          <div class="small">(R) tmux new -s "adventure"</div>
+          <div class="small">(S) tmux a -t "adventure"<name></div>
+          <div class="small">(J) tmux a -t "adventure"<name></div>
+          <aside class="notes">(TMUX, Terminal Sharing)</aside>
+        </section>
+
+        <!-- searching for goblins -->
+        <section>
+          <div class="small">find . -name "goblin"</div>
+          <div class="">
+            <img height="60%" src='images/map.png'/>
+          </div>
+          <aside class="notes">(Tsamina mina zangalewa, this is not africa)</aside>
+        </section>
+        <section>
+          <div class="small">R: "We have found nothing. Maybe we should wait till nightfall?"</div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">
+            unlink /etc/localtime && ln -s /usr/share/zoneinfo/US/Pacific /etc/localtime
+          </div>
+          <div class="">
+            <img height="60%" src='images/moon.png'/>
+          </div>
+          <aside class="notes">(It's just visual change, we didn't mess with actual date)</aside>
+        </section>
+        <section>
+          <div class="small">./goblin.sh</div>
+          <div class="">
+            <img height="30%" src='images/goblin.png'/>
+          </div>
+          <aside class="notes">Goblin spotted!</aside>
+        </section>
+        <section>
+          <div class="small">!!</div>
+          <div class="">
+            <img height="30%" src='images/goblin.png'/>
+            <img height="30%" src='images/goblin.png'/>
+          </div>
+          <aside class="notes">(!! repeats the previous command)</aside>
+        </section>
+        <section>
+          <div class="small">kill goblin >/dev/null 2>$1 && $_</div>
+          <aside class="notes">R drew his bow and pew pew</aside>
+        </section>  
+        <section>
+          <div class="small">ls -al</div>
+          <aside class="notes">(Searching for anything hidden)</aside>
+        </section>
+
+        <!-- scroll of portal -->
+        <section>
+          <div class="small">S: "Hey look what have I found. A scroll!!"</div>
+          <div class="">
+            <img src='images/scroll.png'/>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">R: "Let's read it!"</div>
+          <aside class="notes">(As usual, adventurers will always do anything stupid to progress the plot.)</aside>
+        </section>
+        <section>
+          <div class="small">$(cat scroll_of_portal)</div>
+          <div class="">
+            <img src='images/scroll_revealed.png'/>
+          </div>
+          <aside class="notes">S read the scroll</aside>
+        </section>
+        <section>
+          <div class="small">ssh -nNT -L 1000:localhost:2000 goblin_realm</div>
+          <div class="">
+            <img height='60%' src='images/portal.png'/>
+          </div>
+          <aside class="notes">
+            (SSH Tunneling: local port 1000, realm localhost:2000)
+          </aside>
+        </section>
+
+        <!-- the realm of goblin(s) -->
+        <section>
+          <div class="small">./goblin.sh && $_ && $_ && $_ ...</div>
+          <div class="">
+            <img height="20%" src='images/goblin.png'/>
+            <img height="20%" src='images/goblin.png'/>
+            <img height="20%" src='images/goblin.png'/>
+          </div>
+          <div class="">
+            <img height="20%" src='images/goblin.png'/>
+            <img height="20%" src='images/goblin.png'/>
+            <img height="20%" src='images/goblin.png'/>
+          </div>
+          <aside class="notes">There were so many of them!</aside>
+        </section>
+        <section>
+          <div class="small">S: "Relax."</div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">
+            kill -9 `ps -ef | grep -i goblin | awk '{print $2}'`
+          </div>
+          <aside class="notes">S hurled a chain lightning, and all goblins were instantly killed.</aside>
+        </section>
+        
+        <!-- Goblin King -->
+        <section>
+          <div class="small">"Kho dare to anter my realm!! DYYEEEE!!!!"</div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">./goblin_king.sh</div>
+          <div class="">
+            <img height="70%" src='images/goblin_king.png'/>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <div class="small">while [ true ]; do HP=2000; done</div>
+          <aside class="notes">The goblin king regenerated his health so fast he was barely injured.</aside>
+        </section>
+
+       <!-- yare yare daze -->
+       <section>
+          <div class="small">J: "..."</div>
+          <div class="">
+            <img height="60%" src='images/star_platinum.png'/>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">Ctrl+Z</div>
+          <div class="">
+            <img height="60%" src='images/star_platinum_time_stop.png'/>
+          </div>
+          <aside class="notes">([1]+ Stopped ./goblin_king.sh)</aside>
+        </section>
+        <section>
+          <div class="small">sudo kill -9 goblin_king</div>
+          <div>&nbsp;</div>
+          <div class="small">
+            オラオラオラオラオラオラオラオラオラオラオラオラオラオラオラオラ
+          </div>
+          <div class="small">
+            オラオラオラオラオラオラオラオラオラオラオラオラオラオラオラオラ
+          </div>
+          <div class="small">
+            オラオラオラオラオラオラオラオラオラオラオラオラオラオラオラオラ
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <div class="small">R: "Let's split the loot and call it a night."</div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">tmux kill-session -t "adventure"</div>
+          <aside class="notes">GG</aside>
+        </section>
+        <section>
+          <div class="small">?</div>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <div class="small">To be continued...</div>
+          <aside class="notes"></aside>
+        </section>
+      </div>
+    </div>
+    <script>
+      Reveal.initialize({ controls: false, history: true, progress: true, showNotes: true, slideNumber: false });
+    </script>
+  </body>
+</html>

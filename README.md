@@ -1,9 +1,9 @@
-# Git Master X%
+# Linux Master X%
 
 **Changelog**
 
-2%
+1%
 
 **Site**
 
-[https://gylsky.github.io/git-master/](https://gylsky.github.io/git-master/)
+[https://gylsky.github.io/git-master/](https://gylsky.github.io/linux-master/)
